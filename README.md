@@ -15,6 +15,8 @@ See It In Action!
 
 ![](http://i.imgur.com/4oASxrY.jpg)
 
+[Here's a video of it going through the whole loop](https://www.youtube.com/watch?v=kp3BQbfbk-I)
+
 [Here's an Imgur album of the prototype, the wiring, and some action shots](http://imgur.com/a/isnp1)
 
 Hardware and How To
