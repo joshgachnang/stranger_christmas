@@ -13,7 +13,7 @@ Merry Christmas!
 See It In Action!
 =================
 
-![](http://i.imgur.com/0zQ1AYA.gifv)
+![](http://i.imgur.com/4oASxrY.jpg)
 
 [Here's an Imgur album of the prototype, the wiring, and some action shots](http://imgur.com/a/isnp1)
 
