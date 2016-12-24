@@ -3,11 +3,13 @@
 #define NUM_LEDS 50
 // Which data pin on the Arduino is hooked up to the Data In wire on your light string
 #define DATA_PIN 3
+// For some reason, red and green were flipped on my lights. You might want to test these.
 #define GREEN CRGB::Red
 #define RED CRGB::Green
 #define BLUE CRGB::Blue
 #define BLACK CRGB::Black
 #define WHITE CRGB::White
+#define MAX_BRIGHTNESS 255
 
 // This is the word that will be blinking, no spaces or special characters
 char BLINK_WORD [] = "MERRYCHRISTMAS";
@@ -71,21 +73,21 @@ void initFlash() {
   }
   
   // Slowly go from off to full brightness
-  for ( int j = 0; j < 100; j = j + 1) {
+  for ( int j = 0; j < MAX_BRIGHTNESS; j = j + 1) {
     FastLED.setBrightness(j);
     delay(10);
     FastLED.show();
   }
   
   // Go from full brightness to off
-  for ( int j = 100; j >= 0; j = j - 1) {
+  for ( int j = MAX_BRIGHTNESS; j >= 0; j = j - 1) {
     FastLED.setBrightness(j);
     delay(10);
     FastLED.show();
   }
   
   // Make the colored flashes full brightness
-  FastLED.setBrightness(100);
+  FastLED.setBrightness(MAX_BRIGHTNESS);
   
   // Reset the LEDs to black so we can blink the word
   for ( int i = 0; i < NUM_LEDS; i = i + 1 ) {
